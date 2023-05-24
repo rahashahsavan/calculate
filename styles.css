@@ -1,17 +1,48 @@
 
 body{
     background-color: rgba(154, 141, 219, 0.462);
+    box-sizing: border-box;
+
 }
 
 .calculate_box{
     width: fit-content;
     padding:10px 10px;
-    margin:10px 10px;
-    background-color: rgba(139, 121, 65, 0.688);
+    margin:150px auto;
+    background-color: rgba(147, 63, 243, 0.688);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 1px #262626;
+    
+}
+.back{
+    background-color: azure;
+    border-radius: 4px;
 }
 .screen{
-    width:80%;
-    height: 40px;
+    width:89%;
+    height: 50px;
     padding: 10px 10px;
-    background-color: rgb(94, 93, 93);
+    background-color: rgba(32, 22, 137, 0.288);
+    border-radius: 4px;
+}
+
+.btn input{
+    width:40px;
+    height:40px;
+    box-shadow: 1px 1px 3px  #2c2b2b;
+    font-size: 20px;
+    padding:2px 2px ;
+}
+
+.operation  input{
+    background-color:rgba(40, 112, 88, 0.856);
+    border:0;
+    
+}
+#equality{
+    width:100%;
+    background-color: aquamarine;
+}
+#clear{
+    background-color: rgb(219, 88, 110);
 }
