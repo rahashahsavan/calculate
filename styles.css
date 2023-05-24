@@ -2,3 +2,16 @@
 body{
     background-color: rgba(154, 141, 219, 0.462);
 }
+
+.calculate_box{
+    width: fit-content;
+    padding:10px 10px;
+    margin:10px 10px;
+    background-color: rgba(139, 121, 65, 0.688);
+}
+.screen{
+    width:80%;
+    height: 40px;
+    padding: 10px 10px;
+    background-color: rgb(94, 93, 93);
+}
