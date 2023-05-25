@@ -11,8 +11,21 @@ buttons.forEach(function(button) {
     button.addEventListener("click" , function(e){
     let value = e.target.value;           
     event.stopPropagation()                          // ?? I don't know what exactly do 
-    if(value != undefined ){
-                  
+    if(value != undefined & value != "=" & value != "C" ){  
     screen.value += value; }                           // ?? if the code above not exist this show me three times of value
 })                        
+})
+
+equality.addEventListener("click" , function(e){
+    if(screen.value == ""){
+        screen.value = ""
+    }else{
+        let answer = eval(screen.value)
+        screen.value = answer
+    }    
+})
+
+clear.addEventListener("click" , function(e){
+    screen.value= " "
+    event.stopImmediatePropagation()
 })
