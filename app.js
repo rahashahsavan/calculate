@@ -9,7 +9,10 @@ let clear = document.querySelector("#clear")
 
 buttons.forEach(function(button) {
     button.addEventListener("click" , function(e){
-    let value = e.target.value;
-    screen.value += value;
-    })
+    let value = e.target.value;           
+    event.stopPropagation()                          // ?? I don't know what exactly do 
+    if(value != undefined ){
+                  
+    screen.value += value; }                           // ?? if the code above not exist this show me three times of value
+})                        
 })
